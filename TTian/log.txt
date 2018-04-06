@@ -1,0 +1,194 @@
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：http
+<br>行号:0
+<br>信息：http://116.31.119.150:73/service/api.aspx?action=query&uId=13336:Unable to connect to the remote server
+<br>时间：2016/3/13 16:54:32<br>
+-------------------------------------华丽的分割线------------------------------
+<br>信息： 投注异常 63726 疯狂28 199633 0
+<br>时间：2016/3/14 21:05:53<br>
+-------------------------------------华丽的分割线------------------------------
+<br>信息： 投注异常 13345 韩国16 1476494 0
+<br>时间：2016/3/15 11:34:40<br>
+-------------------------------------华丽的分割线------------------------------
+<br>信息： 投注异常 63496 疯狂16 200992 0
+<br>时间：2016/3/15 19:44:47<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：http
+<br>行号:0
+<br>信息：http://utf8.sms.webchinese.cn/?Uid=ukton11123&Key=8fae4f51c99ec13a766b&smsMob=15619276636&smsText=您的短信验证码为190672【天天28娱乐网】:The operation has timed out
+<br>时间：2016/3/15 19:49:29<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：http
+<br>行号:0
+<br>信息：http://utf8.sms.webchinese.cn/?Uid=ukton11123&Key=8fae4f51c99ec13a766b&smsMob=15619276636&smsText=您的短信验证码为406262【天天28娱乐网】:The operation has timed out
+<br>时间：2016/3/15 19:50:23<br>
+-------------------------------------华丽的分割线------------------------------
+<br>信息： 投注异常 51579 疯狂28 201852 0
+<br>时间：2016/3/16 10:05:27<br>
+-------------------------------------华丽的分割线------------------------------
+<br>信息： 投注异常 51579 加拿大16 1973837 0
+<br>时间：2016/3/16 11:24:24<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：exec
+<br>行号:0
+<br>信息：Unknown column '0helpTime' in 'field list'
+update DBUser set  helpCount=0helpTime=874035506 where id =12582
+<br>时间：2016/3/16 18:57:23<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：exec
+<br>行号:0
+<br>信息：Unknown column '4helpTime' in 'field list'
+update DBUser set  helpCount=4helpTime=874064491 where id =12301
+<br>时间：2016/3/16 18:57:52<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：exec
+<br>行号:0
+<br>信息：Unknown column '4helpTime' in 'field list'
+update DBUser set  helpCount=4helpTime=874083351 where id =12301
+<br>时间：2016/3/16 18:58:11<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：exec
+<br>行号:0
+<br>信息：Unknown column '4helpTime' in 'field list'
+update DBUser set  helpCount=4helpTime=874119123 where id =12301
+<br>时间：2016/3/16 18:58:47<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Unable to connect to any of the specified MySQL hosts.
+select   * from DBSetup
+<br>时间：2017/4/17 14:31:33<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Unable to connect to any of the specified MySQL hosts.
+select * from DBNews where id>0 limit 0,5
+<br>时间：2017/4/17 14:31:37<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Unable to connect to any of the specified MySQL hosts.
+select  * from DBH5Game where  id=1
+<br>时间：2017/4/17 14:31:38<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Unable to connect to any of the specified MySQL hosts.
+select   * from DBSetup
+<br>时间：2017/4/17 14:33:56<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Unable to connect to any of the specified MySQL hosts.
+select * from DBNews where id>0 limit 0,5
+<br>时间：2017/4/17 14:33:57<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Unable to connect to any of the specified MySQL hosts.
+select  * from DBH5Game where  id=1
+<br>时间：2017/4/17 14:33:58<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Unable to connect to any of the specified MySQL hosts.
+select   * from DBSetup
+<br>时间：17-4-19 下午 02:48:26<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Unable to connect to any of the specified MySQL hosts.
+select   * from DBNews where id>0 limit 0,1
+<br>时间：17-4-19 下午 02:48:38<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Unable to connect to any of the specified MySQL hosts.
+select * from DBNews
+<br>时间：17-4-19 下午 02:48:39<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Authentication to host '127.0.0.1' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)
+select   * from DBSetup
+<br>时间：17-4-19 下午 03:16:25<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Authentication to host '127.0.0.1' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)
+select * from DBNews where id>0 limit 0,5
+<br>时间：17-4-19 下午 03:16:30<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Authentication to host '127.0.0.1' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)
+select  * from DBH5Game where  id=1
+<br>时间：17-4-19 下午 03:16:31<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Authentication to host '127.0.0.1' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)
+select * from DBNews where id>0 limit 0,5
+<br>时间：17-4-19 下午 03:17:02<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Authentication to host '127.0.0.1' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)
+select  * from DBH5Game where  id=1
+<br>时间：17-4-19 下午 03:17:02<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Authentication to host '127.0.0.1' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)
+select * from DBNews where id>0 limit 0,5
+<br>时间：17-4-19 下午 03:17:05<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Authentication to host '127.0.0.1' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)
+select  * from DBH5Game where  id=1
+<br>时间：17-4-19 下午 03:17:06<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Authentication to host '127.0.0.1' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)
+select   * from DBSetup
+<br>时间：17-4-19 下午 03:20:21<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Authentication to host '127.0.0.1' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)
+select * from DBNews where id>0 limit 0,5
+<br>时间：17-4-19 下午 03:20:25<br>
+-------------------------------------华丽的分割线------------------------------
+<br>文件：
+<br>函数：listReader
+<br>行号:0
+<br>信息：Authentication to host '127.0.0.1' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)
+select  * from DBH5Game where  id=1
+<br>时间：17-4-19 下午 03:20:25<br>

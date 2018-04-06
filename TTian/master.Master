@@ -1,0 +1,175 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="ttian28.master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%=ttian28.Data.setup.webName %></title> 
+   
+    <link rel="stylesheet" href="/public/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/public/lib/bootstrap/css/bootstrap-theme.min.css" />
+   <link rel="stylesheet" href="/public/css/buttons.css" />  
+    <link rel="stylesheet" type="text/css" href="/public/css/normalize.css" />
+        <link rel="stylesheet" href="/public/css/style.css" />
+    <script src="/public/lib/jquery.min.js"></script>
+    <script src="/public/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/public/js/func.js"></script>
+    <script src="/public/js/web.js"></script>
+     
+</head>
+<body>
+     
+        <div class="head">
+            <div  style=" width:30%;float:left;overflow:hidden;height: 30px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                官方QQ群<a class="orange" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=cb1c1f7d50852b06da66cd18478811686521a11530a7ab8a94de62d5a791cad9">345206619<img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="天天28官方群" title="天天28官方群"></a>
+                客服<img  style="CURSOR: pointer" onclick="javascript:window.open('http://wpa.qq.com/msgrd?v=3&uin=122070929', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');"  border="0" SRC=http://wpa.qq.com/pa?p=1:2194002016:17 alt="点击这里给我发消息"/>
+                客服<img  style="CURSOR: pointer" onclick="javascript:window.open('http://wpa.qq.com/msgrd?v=3&uin=122070929', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');"  border="0" SRC=http://wpa.qq.com/pa?p=1:2194002016:17 alt="点击这里给我发消息"/>
+                
+
+            </div>
+         <div  style=" width:70%;float:left;text-align:right;padding-right:20px;overflow:hidden;height: 30px;">
+               <%  if (user == null)
+                   {%>
+                <a href="/" class="orange">[登录]</a>&nbsp;&nbsp;&nbsp;<a href="/reg.aspx" class="orange"> [注册]</a>
+                <%} %>
+                 <% 
+                     if (user != null)
+                     {
+                         %>
+                        尊贵的 &nbsp;&nbsp;<span class='red'><%=user.nickName %> </span>
+                         &nbsp;&nbsp;ID: &nbsp;&nbsp;<span class='red'><%=user.id %> </span><img src="/imgs/lv<%=user.vip %>.gif" />
+                 &nbsp;&nbsp;<%=ttian28.Data.setup.moneyName %>: &nbsp;&nbsp;<span class='red'><%=serverLib.CFun.formatMoney(user.money)%> </span><img src="/imgs/money.png" />
+                 &nbsp;&nbsp;银行: &nbsp;&nbsp;<span class='red'><%=serverLib.CFun.formatMoney(user.bankMoney) %> </span><img src="/imgs/money.png" />
+                 &nbsp;&nbsp;积分: &nbsp;&nbsp;<span class='red'><%=user.exp %> </span>
+
+                  &nbsp;&nbsp;<a href="/?action=logout"><span class='red'>[退出] </span></a>
+                      <%  
+                          }
+                     %>
+                 |&nbsp;&nbsp;<a href="/agents.aspx" class="orange">合作代理</a>&nbsp;&nbsp;
+                 |&nbsp;&nbsp;<a href="/invite.aspx" class="orange">推荐好友</a>
+            </div>
+        </div>
+    <div style="background-color:#DA4453">
+              
+         <div style=" width:25%;float:left;text-align:right"><img src="/imgs/logo.png" /></div>
+         <div style=" width:75%;float:left" id="menu">
+               <%
+                   int index = 0;
+                   if (Request.Url.ToString().IndexOf("/game") != -1)
+                       index = 1;
+                   if (Request.Url.ToString().IndexOf("/activity") != -1)
+                       index = 2;
+                   if (Request.Url.ToString().IndexOf("/shop") != -1)
+                       index = 3;
+                   if (Request.Url.ToString().IndexOf("/member") != -1)
+                       index = 4;
+                   if (Request.Url.ToString().IndexOf("/top") != -1)
+                       index = 5;
+                   if (Request.Url.ToString().IndexOf("/invite") != -1)
+                       index = 6;
+                   if (Request.Url.ToString().IndexOf("/news") != -1)
+                       index = 7;
+                    %>
+             <menu>
+             <li  onclick="window.location.href='/'"><img class="icon" width="40" height="40" src="/imgs/iconHome.png" />&nbsp;&nbsp;网站首页</li>
+             <li onclick="window.location.href='/game'"><img class="icon"  width="40" height="40" src="/imgs/iconGame.png" />&nbsp;&nbsp;游戏中心</li>
+             <li  onclick="window.location.href='/activity.aspx'"><img class="icon"  width="40" height="40" src="/imgs/iconHome.png" />&nbsp;&nbsp;活动专区</li>
+             <li  onclick="window.location.href='/shop'"><img class="icon"  width="40" height="40" src="/imgs/iconGift.png" />&nbsp;&nbsp;兑换礼品</li>
+             <li  onclick="window.location.href='/member'"><img class="icon"  width="40" height="40" src="/imgs/iconMember.png" />&nbsp;&nbsp;会员中心</li>
+             <li  onclick="window.location.href='/top.aspx'"><img class="icon"  width="40" height="40" src="/imgs/iconTop.png" />&nbsp;&nbsp;排行榜</li>
+             <li  onclick="window.location.href='/invite.aspx'"><img class="icon"  width="40" height="40" src="/imgs/iconShare.png" />&nbsp;&nbsp;邀请好友</li>
+            <li  onclick="window.location.href='/news.aspx'"><img class="icon"  width="40" height="40" src="/imgs/iconNews.png" />&nbsp;&nbsp; 系统公告</li>
+                 <li class="slider" style="left:<%=120*index%>px"></li>
+             </menu>
+        </div>
+        <div style="clear:left"></div>
+        </div>
+        
+        <div class="red" style="clear:left;height:1px;background-color:#e64047"></div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    <div style="clear:left"></div>
+    <div class="bottom">
+
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1257799063'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257799063%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
+	天天28<a href="http://www.fj159.com/">http://www.fj159.com/ </a> <br />
+
+健康游戏忠告：抵制不良游戏，拒绝盗版游戏；注意自我保护，谨防受骗上当；适度游戏益脑，沉迷游戏伤身；合理安排时间，享受健康生活。 <br />
+
+Copyright © 2010-2016 Modoupi.com All Rights Reserved 网站备案： 闽ICP备16006279号-1
+
+
+
+    </div>
+
+      <script>
+          $("menu li").click(function (e) {
+
+              // make sure we cannot click the slider
+              if ($(this).hasClass('slider')) {
+                  return;
+              }
+
+              /* Add the slider movement */
+
+              // what tab was pressed
+              var whatTab = $(this).index();
+
+              // Work out how far the slider needs to go
+              var howFar = 160 * whatTab;
+
+              $(".slider").css({
+                  left: howFar + "px"
+              });
+
+              /* Add the ripple */
+
+              // Remove olds ones
+              $(".ripple").remove();
+
+              // Setup
+              var posX = $(this).offset().left,
+	      posY = $(this).offset().top,
+	      buttonWidth = $(this).width(),
+	      buttonHeight = $(this).height();
+
+              // Add the element
+              $(this).prepend("<span class='ripple'></span>");
+
+              // Make it round!
+              if (buttonWidth >= buttonHeight) {
+                  buttonHeight = buttonWidth;
+              } else {
+                  buttonWidth = buttonHeight;
+              }
+
+              // Get the center of the element
+              var x = e.pageX - posX - buttonWidth / 2;
+              var y = e.pageY - posY - buttonHeight / 2;
+
+              // Add the ripples CSS and start the animation
+              $(".ripple").css({
+                  width: buttonWidth,
+                  height: buttonHeight,
+                  top: y + 'px',
+                  left: x + 'px'
+              }).addClass("rippleEffect");
+          });
+    </script>
+        <% if (Session["hint"] != null)
+            {
+                Response.Write("<script>showHint('" + Session["hint"] + "');</script>");
+                Session["hint"] = null;
+            }
+             %>
+</body>
+</html>

@@ -1,0 +1,11 @@
+E:\工作室\新项目\TTian\TTian\bin\TTian.dll.config
+E:\工作室\新项目\TTian\TTian\bin\TTian.dll
+E:\工作室\新项目\TTian\TTian\bin\TTian.pdb
+E:\工作室\新项目\TTian\TTian\bin\LitJSON.dll
+E:\工作室\新项目\TTian\TTian\bin\MySql.Data.dll
+E:\工作室\新项目\TTian\TTian\bin\mySQLLib.dll
+E:\工作室\新项目\TTian\TTian\bin\serverLib.dll
+E:\工作室\新项目\TTian\TTian\bin\ttian28.dll
+E:\工作室\新项目\TTian\TTian\obj\Debug\TTian.csprojResolveAssemblyReference.cache
+E:\工作室\新项目\TTian\TTian\obj\Debug\TTian.dll
+E:\工作室\新项目\TTian\TTian\obj\Debug\TTian.pdb
